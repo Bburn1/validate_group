@@ -2,7 +2,7 @@
 
 function validateEmail(arrGroups){
 
-    let regex = /^(fm|fe|fd|FD|FE|FM)20\d{2}(-\d{1,2})?$/g
+    let regex = /^(F[DEM]|f[dem])20\d{2}(-\d+)?$/g
 
     arrGroups.forEach((group) => {
         if(group.search(regex)<0) {
@@ -16,7 +16,7 @@ function validateEmail(arrGroups){
 }
 
 arrGroups = [
-    'FD2022-12',
+    'FD2022-121',
     'FE2000-1',
     'fm2008',
 
